@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
 func main() {
 
@@ -41,4 +44,11 @@ func main() {
 
 	var texto string // Todo tipo de dado tem seu valor zero (valor inicial), para o tipo string, se torna uma string vazia e para números o valor 'zero'
 	fmt.Println(texto)
+
+	var booleano bool = true // por padrão 'false'
+	fmt.Println(booleano)
+	//  variavel - tipo - pacote
+	var erro error = errors.New("Erro interno!")
+	fmt.Println(erro)
+
 }
